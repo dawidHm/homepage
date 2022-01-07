@@ -1,0 +1,62 @@
+body {
+    background-color: #eeeeee;
+    color: #000;
+    padding: 15px 0;
+}
+
+.tresc {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(192, 192, 192);
+    padding: 15px;
+    max-width: 790px;
+    width: 100%;
+}
+
+.trescEditable {
+    background-color: rgb(233, 233, 233);
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.naglowek {
+    color: crimson;
+}
+
+.cytat {
+    font-style: oblique;
+}
+
+.uwaga {
+    color: crimson;
+    font-size: 1.1em;
+    font-style: oblique;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin: 35px 25px 12px 12px;
+}
+
+.przycisk {
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    padding: 5px 21px;
+    width: 100%;
+}
+
+.przycisk:hover {
+    background-color: rgb(99, 177, 99);
+}
+
+.przyciskChange {
+    background-color: rgb(223, 11, 11);
+}
+
+.przyciskChange:hover {
+    background-color: rgb(197, 114, 114);
+}
