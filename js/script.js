@@ -1,17 +1,23 @@
 {
     const welcome = () => {
-        console.log("Whassup..?");
+        console.log("What are you looking for..?");
     }
 
-    const onChangeBackgroundClick = () => {
+    const toggleBackground = () => {
+        const tresc = document.querySelector(".tresc");
+
         tresc.classList.toggle("trescEditable");
         przycisk.classList.toggle("przyciskChange");
     }
 
-    welcome();
+    const init = () => {
+        przycisk.addEventListener("click", toggleBackground);
 
-    let przycisk = document.querySelector(".przycisk");
-    let tresc = document.querySelector(".tresc");
+        welcome();
+    }
 
-    przycisk.addEventListener("click", onChangeBackgroundClick);
+    const przycisk = document.querySelector(".przycisk");
+
+    init();
+
 }
