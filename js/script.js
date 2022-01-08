@@ -3,7 +3,7 @@
         console.log("What are you looking for..?");
     }
 
-    const toggleBackground = () => {
+    const toggleBackground = (przycisk) => {
         const tresc = document.querySelector(".tresc");
 
         tresc.classList.toggle("trescEditable");
@@ -11,13 +11,13 @@
     }
 
     const init = () => {
-        przycisk.addEventListener("click", toggleBackground);
-
+        const przycisk = document.querySelector(".przycisk");
+        przycisk.addEventListener("click", () => {
+            toggleBackground(przycisk);
+        });
         welcome();
     }
 
-    const przycisk = document.querySelector(".przycisk");
-
     init();
-
+    
 }
